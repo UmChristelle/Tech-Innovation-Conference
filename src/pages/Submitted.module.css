@@ -1,0 +1,84 @@
+.main { padding-top: 80px; min-height: 100vh; }
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+  animation: fadeUp 0.5s ease both;
+}
+
+.banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(232,255,71,0.08);
+  border: 1px solid rgba(232,255,71,0.25);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 1.5s ease infinite;
+}
+
+.title { font-family: var(--font-display); font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1; margin-bottom: 12px; }
+.sub { color: var(--muted); font-size: 0.95rem; margin-bottom: 36px; }
+
+.card {
+  background: var(--gray);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.cardTop {
+  background: var(--gray2);
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.ticketType { font-family: var(--font-display); font-size: 1.4rem; color: var(--accent); letter-spacing: 1px; }
+.event { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); letter-spacing: 1px; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 24px;
+  font-size: 0.88rem;
+  border-bottom: 1px solid var(--border);
+  gap: 16px;
+}
+
+.row:last-child { border-bottom: none; }
+.row span:first-child { color: var(--muted); font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1px; flex-shrink: 0; width: 120px; }
+.row span:last-child { text-align: right; }
+
+.actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.edit, .cancel {
+  padding: 13px 24px;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all var(--transition);
+  font-family: var(--font-body);
+}
+
+.edit { flex: 1; background: var(--accent); color: var(--black); }
+.edit:hover { opacity: 0.9; transform: translateY(-1px); }
+
+.cancel { background: transparent; border: 1px solid rgba(255,71,87,0.4); color: var(--accent2); }
+.cancel:hover { background: rgba(255,71,87,0.1); border-color: var(--accent2); }
