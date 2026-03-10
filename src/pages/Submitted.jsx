@@ -24,11 +24,11 @@ export default function Submitted({ formData, cancelRegistration }) {
           You're already registered
         </div>
         <h1 className={styles.title}>Welcome Back, <br />{formData.fullName.split(' ')[0]}.</h1>
-        <p className={styles.sub}>Here's your TechConf 2025 registration summary.</p>
+        <p className={styles.sub}>Here's your TechConf 2026 registration summary.</p>
         <div className={styles.card}>
           <div className={styles.cardTop}>
             <span className={styles.ticketType}>{formData.ticketType} Ticket</span>
-            <span className={styles.event}>TechConf 2025 · Sep 12–14</span>
+            <span className={styles.event}>TechConf 2026 · Sep 12–14</span>
           </div>
           {Object.entries(LABELS).map(([key, label]) =>
             formData[key] && key !== 'ticketType' ? (

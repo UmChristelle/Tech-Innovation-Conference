@@ -1,16 +1,55 @@
-# React + Vite
+# TechConf 2026 — Tech Innovation Conference
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A multi-page event registration system built with React and Vite. Users can view conference details, register for the event, review their information, and receive confirmation. Returning users are automatically recognized via localStorage.
 
-Currently, two official plugins are available:
+## Pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Event Info** — Conference overview, speakers, and ticket tiers
+- **Register** — Multi-field form with live validation
+- **Review** — Summary of entered details before submission
+- **Confirmation** — Success screen after registration
+- **Submitted** — Returning user dashboard with edit and cancel options
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 18
+- Vite
+- React Router v6
+- CSS Modules
+- localStorage API
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone the repository
+
+git clone https://github.com/UmChristelle/Tech-Innovation-Conference.git
+
+### 2. Navigate into the project
+
+cd tech-conference
+
+### 3. Install dependencies
+
+npm install
+
+### 4. Run the development server
+
+npm run dev
+
+### 5. Open in browser
+
+http://localhost:5173
+
+## Features
+
+- Client-side routing with React Router
+- Form validation with error messages
+- State lifted to parent component and shared across pages
+- Registration data persisted in localStorage
+- Returning users redirected to their registration summary
+- Fully responsive layout
+- Smooth animations and transitions
+
+## Author
+
+Christella 

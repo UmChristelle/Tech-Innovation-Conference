@@ -146,18 +146,37 @@
 .imgBox {
   height: 180px;
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  overflow: hidden;
+  position: relative;
   border: 1px solid var(--border);
   transition: transform var(--transition);
 }
 
 .imgBox:hover { transform: scale(1.02); }
-.imgBox span { font-size: 2rem; }
-.imgBox p { font-size: 0.8rem; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; font-family: var(--font-mono); }
+
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.75;
+  transition: opacity var(--transition);
+}
+
+.imgBox:hover img { opacity: 1; }
+
+.imgBox p {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  font-size: 0.75rem;
+  color: var(--white);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+  background: rgba(0,0,0,0.5);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
 
 .speakers { padding: 80px 48px; border-top: 1px solid var(--border); }
 

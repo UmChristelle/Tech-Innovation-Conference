@@ -28,7 +28,7 @@ export default function Review({ formData, saveRegistration }) {
         <div className={styles.card}>
           <div className={styles.ticketBadge}>
             <span className={styles.ticketLabel}>{formData.ticketType}</span>
-            <span>TechConf 2025</span>
+            <span>TechConf 2026</span>
           </div>
           <div className={styles.grid}>
             {Object.entries(LABELS).map(([key, label]) => (

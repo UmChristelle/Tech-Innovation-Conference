@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <Link to="/" className={styles.logo}>TECH<span>CONF</span></Link>
-      <span className={styles.tag}>2025</span>
+      <span className={styles.tag}>2026</span>
     </nav>
   )
 }

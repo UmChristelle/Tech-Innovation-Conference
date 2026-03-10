@@ -18,7 +18,7 @@ export default function Confirmation({ formData }) {
         <p className={styles.eyebrow}>Registration Confirmed</p>
         <h1>You're in, {formData.fullName.split(' ')[0]}!</h1>
         <p className={styles.sub}>
-          Your <strong>{formData.ticketType}</strong> ticket for TechConf 2025 has been reserved.
+          Your <strong>{formData.ticketType}</strong> ticket for TechConf 2026 has been reserved.
           We've saved your details. See you September 12–14 in Kigali!
         </p>
         <div className={styles.summary}>
@@ -26,7 +26,7 @@ export default function Confirmation({ formData }) {
           <div className={styles.summaryRow}><span>Email</span><span>{formData.email}</span></div>
           <div className={styles.summaryRow}><span>Ticket</span><span className={styles.badge}>{formData.ticketType}</span></div>
         </div>
-        <p className={styles.note}>📌 Your registration is saved in your browser. Visit anytime to view your details.</p>
+        <p className={styles.note}> Your registration is saved in your browser. Visit anytime to view your details.</p>
         <button className={styles.home} onClick={() => navigate('/')}>← Back to Event</button>
       </div>
     </main>
