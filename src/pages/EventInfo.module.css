@@ -305,3 +305,10 @@
   .speakerGrid, .tickets { grid-template-columns: 1fr; }
   .finalCta { padding: 60px 24px; }
 }
+.metaDivider {
+  width: 1px;
+  height: 14px;
+  background: var(--border);
+  display: inline-block;
+  align-self: center;
+}

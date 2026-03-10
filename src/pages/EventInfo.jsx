@@ -33,8 +33,9 @@ export default function EventInfo() {
           Where Africa's brightest minds in technology converge to shape tomorrow.
         </p>
         <div className={`${styles.meta} animate animate-d3`}>
-          <span> September 12–14, 2026</span>
-          <span> Kigali Convention Centre, Rwanda</span>
+         <span>📅 September 12–14, 2026</span>
+         <span className={styles.metaDivider} />
+         <span>📍 Kigali Convention Centre, Rwanda</span>
         </div>
         <button className={`${styles.cta} animate animate-d4`} onClick={() => navigate('/register')}>
           Register Now <span>→</span>
@@ -55,7 +56,7 @@ export default function EventInfo() {
         <div className={styles.aboutText}>
           <p className={styles.eyebrow}>About the Event</p>
           <h2>Build. Ship.<br />Inspire.</h2>
-          <p>TechConf 2025 is the premier gathering for developers, designers, entrepreneurs, and tech enthusiasts across Africa and beyond. Over three immersive days, explore the latest in AI, Web3, cloud infrastructure, and product design.</p>
+          <p>TechConf 2026 is the premier gathering for developers, designers, entrepreneurs, and tech enthusiasts across Africa and beyond. Over three immersive days, explore the latest in AI, Web3, cloud infrastructure, and product design.</p>
           <ul className={styles.perks}>
             {['Networking with 2,000+ professionals', 'Hands-on coding workshops', 'Startup pitch competition', 'Exclusive swag & resources'].map(p => (
               <li key={p}><span className={styles.check}>✦</span> {p}</li>
@@ -63,23 +64,23 @@ export default function EventInfo() {
           </ul>
         </div>
         <div className={styles.imageGrid}>
-     <div className={styles.imgBox}>
-       <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&q=80" alt="Workshops" />
-       <p>Workshops</p>
-     </div>
-        <div className={styles.imgBox}>
-        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=80" alt="Keynotes" />
-      <p>Keynotes</p>
-     </div>
-      <div className={styles.imgBox}>
-       <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&q=80" alt="Networking" />
-        <p>Networking</p>
-       </div>
-       <div className={styles.imgBox}>
-        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&q=80" alt="Startup Pitches" />
-       <p>Startup Pitches</p>
-       </div>
-   </div>
+  <div className={styles.imgBox}>
+    <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=400&q=80" alt="Workshops" />
+    <p>Workshops</p>
+  </div>
+  <div className={styles.imgBox}>
+    <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&q=80" alt="Keynotes" />
+    <p>Keynotes</p>
+  </div>
+  <div className={styles.imgBox}>
+    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=400&q=80" alt="Networking" />
+    <p>Networking</p>
+  </div>
+  <div className={styles.imgBox}>
+    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&q=80" alt="Startup Pitches" />
+    <p>Startup Pitches</p>
+  </div>
+</div>
       </section>
 
       <section className={styles.speakers}>
