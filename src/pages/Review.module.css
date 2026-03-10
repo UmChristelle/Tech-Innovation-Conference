@@ -1,0 +1,81 @@
+.main { padding-top: 80px; min-height: 100vh; }
+
+.container { max-width: 600px; margin: 0 auto; padding: 48px 24px 80px; }
+
+.header { margin-bottom: 36px; }
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.header h1 { font-family: var(--font-display); font-size: 3rem; line-height: 1; margin-bottom: 8px; }
+.sub { color: var(--muted); font-size: 0.95rem; }
+
+.card {
+  background: var(--gray);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  animation: fadeUp 0.5s ease both;
+}
+
+.ticketBadge {
+  background: var(--accent);
+  color: var(--black);
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticketLabel { font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 1px; }
+.ticketBadge span:last-child { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 2px; }
+
+.grid { padding: 8px 0; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 14px 24px;
+  border-bottom: 1px solid var(--border);
+  transition: background var(--transition);
+}
+
+.row:last-child { border-bottom: none; }
+.row:hover { background: rgba(255,255,255,0.02); }
+
+.rowLabel {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+  width: 160px;
+}
+
+.rowValue { font-size: 0.9rem; color: var(--white); text-align: right; }
+
+.actions { display: flex; gap: 12px; margin-top: 28px; }
+
+.back, .confirm {
+  padding: 14px 24px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all var(--transition);
+  font-family: var(--font-body);
+}
+
+.back { background: transparent; border: 1px solid var(--border); color: var(--muted); }
+.back:hover { border-color: var(--white); color: var(--white); }
+
+.confirm { flex: 1; background: var(--accent); color: var(--black); }
+.confirm:hover { opacity: 0.9; transform: translateY(-1px); }
